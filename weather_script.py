@@ -1,12 +1,6 @@
 import requests
-import tkinter as tk
-from tkinter import messagebox
-import os
 
-API_KEY = os.getenv('OPENWEATHER_API_KEY')
-if not API_KEY:
-    raise ValueError('API key not found. Please set the OPENWEATHER_API_KEY environment variable.')
-
+API_KEY = '87657b969cd8d7d7eaef219391ee45ab'  # Your API key kept in code
 BASE_URL = 'https://api.openweathermap.org/data/2.5/weather'
 
 def get_weather(city_name):
